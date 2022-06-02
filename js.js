@@ -28,6 +28,9 @@ class Person {
 //registruojamas naujas bibliotekos lankytojas-klientas
 //konkretaus objekto sukurimas klases pagrindu
 const klientas_1 = new Person("Jefas", "Josefino", 123456789, "Laisves al., Kaunas", "+37060012345");
+const klientas_2 = new Person("One", "Onauskiene", 098765, "Kaimas Rugpieniu", 869988888);
+//sukurti antra klienta ir jo paimtas knygas, isspausdinti informacija pilna 
+
 //console.log(klientas_1.info());
 
 //pasikeite kliento tel nr
@@ -38,4 +41,9 @@ console.log("kliento info: " + klientas_1.info());
 klientas_1.booksforreading("Nuostabi atmintis");
 klientas_1.booksforreading("Svajoniu galia");
 klientas_1.booksinfo();
+
+klientas_2.booksforreading("antro kliento pirma knyga");
+klientas_2.booksforreading("antro kliento antra knyga");
+console.log(klientas_2.info());
+klientas_2.booksinfo();
 
